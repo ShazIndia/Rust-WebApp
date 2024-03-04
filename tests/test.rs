@@ -52,7 +52,6 @@ fn index() -> &'static str {
 }
 
 use rocket::serde::{Deserialize, Serialize, json::Json};
-use std::io::{BufRead, BufReader};
 
 #[derive(Deserialize, Serialize)]
 #[serde(crate = "rocket::serde")]
